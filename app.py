@@ -22,7 +22,7 @@ TIMEOUT_MS = 3000
 MIN_BRIGHTNESS_BYTE = 0x14  # 20
 MAX_BRIGHTNESS_BYTE = 0xfa  # 250
 
-STATE_FILE = "litra_state.json"
+STATE_FILE = os.path.expanduser("~/.litra_state.json")
 
 def load_state():
     """Load persisted labels and control states."""
